@@ -17,7 +17,7 @@ class eightBall extends Controller {
             'timestamp' => time()
         ];
         DB::table('saved_inqueries')->insert($update);
-        return print($answer);
+        return $answer;
     }
 
 
