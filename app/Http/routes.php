@@ -11,6 +11,6 @@
 |
 */
 
-$app->get('/8ball/question/{question}', function () use ($app) {
-    return print('hell');
+$app->get('/8ball/question/{question}', function ($question) use ($app) {
+    return print($question);
 });
