@@ -10,7 +10,7 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
-
-$app->get('/8ball/question/{question}', 'eightball@getResponse', function ($question) {
+$request = $_GET['text'];
+$app->get('/8ball/question', 'eightball@getResponse', function ($request) {
 
 });
