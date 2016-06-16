@@ -11,6 +11,6 @@
 |
 */
 
-$app->get('/8ball/question/{question}', function ($question) use ($app) {
-    return print($question);
+$app->get('/8ball/question/{question}', '8ball@getResponse', function ($question) {
+
 });
