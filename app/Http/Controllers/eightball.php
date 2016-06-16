@@ -5,7 +5,7 @@ use DB;
 class eightBall extends Controller {
 
 
-    function getResponse($question)
+    function getResponse()
     {
         if($_GET['text'] == '') {
             print('ask a better question');
