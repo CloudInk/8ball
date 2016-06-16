@@ -4,7 +4,7 @@ use DB;
 use MongoDB\Driver\ReadPreference;
 
 
-class eightBall {
+class eightBall extends Controller {
 
 
     function getResponse($question)
