@@ -11,6 +11,6 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
+$app->get('/8ball/question/{question}', function () use ($app) {
+    return print('hell');
 });
