@@ -1,8 +1,6 @@
 <?php
 namespace App\Http\Controllers;
 use DB;
-use MongoDB\Driver\ReadPreference;
-
 
 class eightBall extends Controller {
 
