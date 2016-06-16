@@ -17,7 +17,7 @@ class eightBall extends Controller {
             'user_name'=> isset($_GET['user_name']) ? $_GET['user_name'] : 'not passed'
         ];
         DB::table('saved_inqueries')->insert($update);
-        return 'My response is: *'. $answer;
+        return  $answer;
     }
 
 
