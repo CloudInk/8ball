@@ -12,6 +12,11 @@ class eightBall extends Controller {
         }
 
         $answer = DB::table('generator')->where('response_number', rand(1, 33))->value('response');
+        $update = [
+            'question_asked' => $question,
+            'timestamp' => time()
+        ];
+        DB::table('generator')->insert($update);
         return print($answer);
     }
 
