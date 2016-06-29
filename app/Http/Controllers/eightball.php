@@ -24,7 +24,7 @@ class eightBall extends Controller
 
     function getWeather()
     {
-        if (isset($_POST['token']) && $_POST['token'] == 'uL7D0HPY3gyiyeX0ztB2da3M' || isset($_GET['test'])) {
+        if (isset($_GET['token']) && $_GET['token'] == 'uL7D0HPY3gyiyeX0ztB2da3M' || isset($_GET['test'])) {
             $weather = json_decode(file_get_contents("http://api.wunderground.com/api/a654c6d1f24346d5/conditions/q/KS/Wichita.json"), true);
             $alerts = json_decode(file_get_contents("http://api.wunderground.com/api/a654c6d1f24346d5/alerts/q/KS/Wichita.json"), true);
             $forecast = json_decode(file_get_contents("http://api.wunderground.com/api/a654c6d1f24346d5/forecast/q/KS/Wichita.json"), true);
@@ -39,7 +39,7 @@ class eightBall extends Controller
             $time = date('m-d-Y', time()); //change
             $time2 = date('H:m', time());  //change
             echo "```
-Hello, {$_POST['user_name']}!
+Hello, {$_GET['user_name']}!
 Currently, its {$sh['weather']}.
 The temperature outside is {$sh['temperature_string']}
 The wind is blowing {$sh['wind_string']}
