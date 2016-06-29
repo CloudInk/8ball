@@ -40,10 +40,10 @@ class eightBall extends Controller
             $time2 = date('H:m', time());  //change
             echo "
 Hello, {$_GET['user_name']}!
-Currently, its {$sh['weather']}.
-The temperature outside is {$sh['temperature_string']}
-The wind is blowing {$sh['wind_string']}
-The wind makes it feel like {$sh['feelslike_string']}
+*Currently*, its {$sh['weather']}.
+|The temperature outside is {$sh['temperature_string']}
+|The wind is blowing {$sh['wind_string']}
+|The wind makes it feel like {$sh['feelslike_string']}
 === Forecast ===
 {$fc[0]['title']}
  {$fc[0]['fcttext']}
