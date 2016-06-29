@@ -38,7 +38,7 @@ class eightBall extends Controller
             }
             $time = date('m-d-Y', time()); //change
             $time2 = date('H:m', time());  //change
-            echo "```
+            echo "
 Hello, {$_GET['user_name']}!
 Currently, its {$sh['weather']}.
 The temperature outside is {$sh['temperature_string']}
@@ -53,7 +53,7 @@ The wind makes it feel like {$sh['feelslike_string']}
  {$fc[4]['fcttext']}
 === Alerts ===
 {$alert}
-```";
+";
         } else {
             die("This is a webhook URI, please check your POST parameters and try again.");
         }
