@@ -14,3 +14,7 @@
 $app->get('/8ball/question', 'eightball@getResponse', function () {
 
 });
+
+$app->get('/weather/v1/wichita', 'eightball@getWeather', function() {
+
+});

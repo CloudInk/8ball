@@ -20,5 +20,9 @@ class eightBall extends Controller {
         return $answer;
     }
 
+    function getWeather()
+    {
+        return 'Weather not available at the moment.';
+    }
 
 }
